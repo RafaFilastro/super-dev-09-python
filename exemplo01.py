@@ -53,29 +53,19 @@ def exemplo_solicitar_dados():
 
 
 def exemplo_if_alunos():
-    # float(...) é a forma que convertemos de string para float
     nota1: float = float(input("Digite a nota 1: "))
-    nota2: float = float(input("Digite a nota 1: "))
-    nota3: float = float(input("Digite a nota 1: "))
+    nota2: float = float(input("Digite a nota 2: "))
+    nota3: float = float(input("Digite a nota 3: "))
 
     media: float = (nota1 + nota2 + nota3) / 3
-
-    # bool é boolean (True ou False)
-    aprovado: bool = False
-
-    # media((media >= 6) && (media <= 10)) {
-    if media >= 6 and media <= 10:
-        aprovado = True
-    else:
-        aprovado = False
+    aprovado: bool = 6 <= media <= 10
 
     print("Média:", media)
 
-    if aprovado == True:
+    if aprovado:
         print("Aprovado: sim")
     else:
         print("Aprovado: não")
-
 
 def exemplo_while():
     def contar_ate_5():
@@ -100,7 +90,7 @@ def exemplo_while():
         total_mensal_salarios = 0
         while i < 3:
             jogador: str = input("Nome do jogador de futebol: ")
-            posicao: str = input("Posição do jogar: ")
+            #posicao: str = input("Posição do jogar: ")
             salario_anual: float = float(input("Salário anual: "))
 
             salario_mensal = salario_anual / 12
