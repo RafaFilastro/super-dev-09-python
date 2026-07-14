@@ -18,7 +18,7 @@ def menu():
         "Cadastrar Categoria",
         "Editar Categoria",
         "Apagar Categoria",
-        "Sair"
+        "Sair" 
     ]
 
     menu_escolhido = ""
