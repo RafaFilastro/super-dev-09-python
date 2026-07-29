@@ -14,4 +14,4 @@ def exemplo_com_tratamento():
 
 #ponto de entrada da aplicação, deve ter um único da aplicação inteira
 if __name__ == "__main__":
-    exemplo_sem_tratamento()
+    exemplo_com_tratamento()
