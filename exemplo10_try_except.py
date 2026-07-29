@@ -12,6 +12,21 @@ def exemplo_com_tratamento():
     print("O programa continuou normalmente")
 
 
+
+def exemplo_com_tratamento_conversao():
+    numero_digitado: str = "dois"
+    try:
+        # converter de str para int
+        numero: int = int(numero_digitado)
+        print("Número digitado: ", numero)
+    except ValueError:
+        print("Texto digitado não é um número válido")
+        # print("Não for possível converter o número para inteiro")
+    print("Acabou")
+
+
 #ponto de entrada da aplicação, deve ter um único da aplicação inteira
 if __name__ == "__main__":
-    exemplo_com_tratamento()
+    #exemplo_sem_tratamento()
+    #exemplo_com_tratamento()
+    exemplo_com_tratamento_conversao()
